@@ -1,50 +1,113 @@
 body {
     font-family: "Roboto", sans-serif;
-    color: #2E2F42;
+    color: #434455;
     background-color: #FFFFFF;
 }
 
 a{
     text-decoration: none;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 ul {
     list-style-type: none;
 }
 
-button{
-    cursor: pointer;
-}
 
-/* Header */
+ 
+/* header */
 
 .header {
     background-color: #FFFFFF;
 }
 
-.web{ 
+.logo-studio{ 
     font-family: "Raleway", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
-    line-height: 117%;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #4d5ae5;
-}
-
-.logo{
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 117%;
-    letter-spacing: 0.03em;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #2e2f42;
 }
 
+.logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
 
-/* Main */
+.nav-link:hover,
+.nav-link:focus {
+    color:#404bbf;;
+}
 
+address {
+    font-style: normal;
+}
 
+.address-link{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.address-link:hover,
+.address-link:active{
+    color: #404bbf;
+}
+/* -----------Main-------- */
+
+/* -----------Section 1-------- */
+.section-1{
+    background-color: #2e2f42;
+}
+
+.title{
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: #4D5AE5;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+}
+
+.btn:hover,
+.btn:focus{
+    background-color: #404BBF;
+}
+
+/* -----------Section 2-------- */
+.title-3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02e;
+}
+
+.prgf{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* -----------Section 2-------- */
+.section-3{
+    background-color: #F4F4FD;
+}
 
 /* Footer */
