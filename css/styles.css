@@ -67,7 +67,7 @@ address {
     color: #404bbf;
 }
 
-.address-link:active{
+.address-link:focus{
     color: #404bbf;
 }
 /* -----------Main-------- */
@@ -134,7 +134,7 @@ address {
 /* -----------Section 3-------- */
 
 .port-prgf{
-    line-height: 1.5gi;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
