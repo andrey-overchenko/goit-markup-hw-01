@@ -63,7 +63,10 @@ address {
     color: #434455;
 }
 
-.address-link:hover,
+.address-link:hover{
+    color: #404bbf;
+}
+
 .address-link:active{
     color: #404bbf;
 }
