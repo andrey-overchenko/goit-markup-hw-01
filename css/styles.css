@@ -46,12 +46,15 @@ address {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color #2e2f42;
+    color: #2e2f42;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-    color:#404bbf;;
+.nav-link:hover{
+    color: #404bbf;
+}
+
+.nav-link:focus{
+    color: #404bbf;
 }
 
 .address-link{
@@ -67,7 +70,7 @@ address {
 /* -----------Main-------- */
 
 /* -----------Section 1-------- */
-.section-1{
+.section-one{
     background-color: #2e2f42;
 }
 
@@ -94,12 +97,12 @@ address {
 }
 
 /* -----------Section 2-------- */
-.title-2{
+.title-two{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color:  #2e2f42;
+    color: #2e2f42;
 }
 
 .prgf{
@@ -109,21 +112,27 @@ address {
 }
 
 /* -----------Section 3-------- */
-.section-3{
+.section-tree{
     background-color: #F4F4FD;
 }
 
-.title-3{
+.title-tree{
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color:#2e2f42
+    color: #2e2f42
 }
 
-.sec3-li{
+.sec-li{
     background-color: #FFFFFF;
+}
+/* -----------Section 3-------- */
+
+.porf-prgf{
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 /* Footer */
