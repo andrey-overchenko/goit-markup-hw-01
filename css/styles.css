@@ -23,7 +23,7 @@ address {
 .header-cont{
     display: flex;
     width: 1158px;
-    padding: 0 15px
+    padding: 0 15px;
 }
 
 
@@ -52,6 +52,9 @@ address {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2e2f42;
+}
+
+.header-logo{
     margin-right: 76px;
 }
 
@@ -141,13 +144,13 @@ address {
     padding: 120px 0;
 }
 
-.list-2{
+.list-two{
     display: flex;
     gap: 24px;
 }
 
 .list-elemet{
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .title-two{
@@ -166,12 +169,12 @@ address {
 }
 
 /* -----------Section 3-------- */
-.section-tree{
+.section-three{
     background-color: #F4F4FD;
     padding: 120px 0;
 }
 
-.title-tree{
+.title-three{
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -181,7 +184,7 @@ address {
     margin-bottom: 72px;
 }
 
-.list-3{
+.list-three{
     display: flex;
     gap: 24px;
 }
@@ -223,7 +226,7 @@ address {
 }
 
 .portfolio-element{
-    width: calc((100% - 48px) / 3);
+    width: calc((100% - 3 * 24px) / 4);
 }
 
 .portfolio-div{
