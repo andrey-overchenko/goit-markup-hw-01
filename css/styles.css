@@ -39,6 +39,17 @@ address {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 /* header */
 
 .header {
