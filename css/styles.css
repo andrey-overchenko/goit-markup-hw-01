@@ -175,7 +175,8 @@ address {
 .list-two{
     display: flex;
     gap: 24px;
-    margin: 0 auto;
+    padding-left: 0; 
+    margin: 0;
 }
 
 .list-elemet{
@@ -219,6 +220,8 @@ address {
 .list-three{
     display: flex;
     gap: 24px;
+    padding-left: 0; 
+    margin: 0;
 }
 
 .sec-li{
@@ -255,6 +258,8 @@ address {
     flex-wrap: wrap; 
     column-gap: 24px;
     row-gap: 48px;
+    padding-left: 0; 
+    margin: 0;
 }
 
 .portfolio-element{
