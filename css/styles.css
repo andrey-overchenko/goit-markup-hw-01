@@ -174,12 +174,10 @@ p {
     font-style: normal;
 }
 
+/*    SECTION 1   */
+
 .section {
     background: #2e2f42;
-    background-image: linear-gradient(to bottom,
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url(../images/people-office.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
     margin: auto;
@@ -187,10 +185,14 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -279,6 +281,8 @@ button:focus {
     overflow: hidden;
 }
 
+/*    SECTION 2   */
+
 .section-two {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -335,6 +339,7 @@ button:focus {
     padding-bottom: 120px;
 }
 
+/*    SECTION 3   */
 
 .section-team {
     padding-top: 120px;
@@ -420,7 +425,7 @@ button:focus {
 
 .icon-link:hover,
 .icon-link:focus {
-    background-color: #404BBF;
+    background-color: #404bbf;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -459,7 +464,7 @@ button:focus {
 }
 
 
-
+/*    SECTION 4   */
 
 .images-block-two {
     padding-top: 120px;
@@ -470,7 +475,6 @@ button:focus {
     position: relative;
     width: 360px;
     height: 300px;
-
     overflow: hidden;
 }
 
@@ -492,15 +496,15 @@ button:focus {
 }
 
 .img-two:hover .overlay {
-    transform: translateX(0);
+    transform: translateY(0%);
 }
 
 .img-two:hover,
 .img-two:focus {
     box-shadow:
-        0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16),
-        0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .new-section {
@@ -671,7 +675,7 @@ button:focus {
 
 .footer-icon-link:hover,
 .footer-icon-link:focus {
-    background-color: #31D0AA;
+    background-color: #31d0aa;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
