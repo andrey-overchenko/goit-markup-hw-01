@@ -174,10 +174,12 @@ p {
     font-style: normal;
 }
 
-/*    SECTION 1   */
-
 .section {
     background: #2e2f42;
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
     margin: auto;
@@ -185,14 +187,10 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-        url(../images/people-office.jpg);
-    max-width: 1440px;
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1440px;
+    background-repeat: no-repeat;
 
 }
 
@@ -281,8 +279,6 @@ button:focus {
     overflow: hidden;
 }
 
-/*    SECTION 2   */
-
 .section-two {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -339,7 +335,6 @@ button:focus {
     padding-bottom: 120px;
 }
 
-/*    SECTION 3   */
 
 .section-team {
     padding-top: 120px;
@@ -425,7 +420,7 @@ button:focus {
 
 .icon-link:hover,
 .icon-link:focus {
-    background-color: #404bbf;
+    background-color: #404BBF;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -464,7 +459,7 @@ button:focus {
 }
 
 
-/*    SECTION 4   */
+
 
 .images-block-two {
     padding-top: 120px;
@@ -475,6 +470,7 @@ button:focus {
     position: relative;
     width: 360px;
     height: 300px;
+
     overflow: hidden;
 }
 
@@ -496,15 +492,15 @@ button:focus {
 }
 
 .img-two:hover .overlay {
-    transform: translateY(0%);
+    transform: translateX(0);
 }
 
 .img-two:hover,
 .img-two:focus {
     box-shadow:
-        0 1px 6px 0 rgba(46, 47, 66, 0.08),
+        0 2px 1px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16),
-        0 2px 1px 0 rgba(46, 47, 66, 0.08);
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .new-section {
@@ -625,7 +621,7 @@ button:focus {
     width: 208px;
     height: 80px;
     gap: 16px;
-    margin-right: 120px;
+    margin-right: 80px;
 
 }
 
@@ -679,4 +675,324 @@ button:focus {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.subscribe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.form-sub {
+    display: flex;
+    gap: 24px;
+}
+
+.input-email {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    border-radius: 4px;
+    color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+}
+
+.input-email::placeholder {
+    color: #ffffff;
+}
+
+.footer-icon-button {
+    border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    background: #4d5ae5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    line-height: 1.5
+}
+
+.svg-send {
+    margin-left: 16px;
+    fill: #fff;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: flex;
+
+    transition-property: background-color;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window {
+
+    flex-direction: column;
+    padding: 72px 24px 24px 24px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 408px;
+    min-height: 584px;
+    background: #fcfcfc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.modal-icon-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-icon-button:hover {
+    border: none;
+    fill: #ffffff;
+}
+
+.modal-icon-button:focus {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+}
+
+
+.modal-icons-one {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-par {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+    line-height: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    min-height: 336px;
+}
+
+
+.form-input {
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 360px;
+    height: 40px;
+    margin-top: 4px;
+    outline: transparent;
+    position: relative;
+    padding-left: 38px;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.person {
+    margin-bottom: 8px;
+}
+
+.form-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-input:hover,
+.form-input:focus {
+    border: 1px solid #4d5ae5;
+    outline: transparent;
+    fill: #4D5AE5;
+
+}
+
+.person-wrap {
+    position: relative;
+}
+
+.person input:hover+svg,
+.person input:focus+svg {
+    fill: #4D5AE5;
+}
+
+.modal-icons-person {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.comment {
+    margin-bottom: 16px
+}
+
+.form-input-comment {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
+    padding: 8px 16px;
+    width: 360px;
+    height: 120px;
+    margin-top: 4px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.form-input-comment:hover,
+.form-input-comment:focus {
+    border-color: #4D5AE5;
+}
+
+.form-field {
+    margin-bottom: 24px;
+}
+
+
+.form-label-checkbox {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+
+}
+
+
+.form-checkbox:hover,
+.form-checkbox:focus {
+    background-color: #404BBF;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.button-modal {
+    display: block;
+    margin: auto;
+    border: none;
+    min-width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    border-radius: 4px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.privacy-check {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    justify-content: center;
+    fill: transparent;
+    margin-right: 8px;
+}
+
+.form-checkbox:checked+label .privacy-check {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+}
+
+.text-blue {
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
 }
